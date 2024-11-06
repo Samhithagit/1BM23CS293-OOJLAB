@@ -1,7 +1,7 @@
 import java.util.Scanner;
 abstract class Shape {
-    protected int dimension1;
-    protected int dimension2;
+    private int dimension1;
+    private int dimension2;
 
     // Constructor to initialize dimensions
     public Shape(int dimension1, int dimension2) {
