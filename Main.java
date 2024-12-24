@@ -19,7 +19,7 @@ System.out.println("Semester: " + sem);
 }
 }
 
-class Internals {
+public class Internals {
 int[] marks = new int[5];
 
 public Internals(int[] marks) {
@@ -59,7 +59,7 @@ System.out.println("Course " + (i + 1) + ": " + seeMarks[i]);
 
 //main program
 import CIE.Student;
-import CIE.Internal;
+import CIE.Internals;
 import SEE.External;
 import java.util.Scanner;
 
@@ -91,18 +91,14 @@ Student student = new Student(usn, name, sem);
 Internals internals = new Internals(internalMarks);
 External external = new External(name,usn,sem,seeMarks);
 
-System.out.println("
-Student Details: ");
+System.out.println("Student Details: ");
 student.printDetails();
-System.out.println("
-Internal Marks: ");
+System.out.println("Internal Marks: ");
 internals.printMarks();
-System.out.println("
-SEE Marks: ");
+System.out.println("SEE Marks: ");
 external.printMarks();
 
-System.out.println("
-Final Marks (50% Internals + 50% SEE): ");
+System.out.println("Final Marks (50% Internals + 50% SEE): ");
 
 for (int i = 0; i < 5; i++) {
 int finalMark = (internalMarks[i]) + (seeMarks[i] / 2);
